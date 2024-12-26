@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Hub</title>
+    <Link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <header>
+        <!-- <div> 
+            <img src="data-stophall-img.webp" id="demo-hall" alt="wellcome from data stop">
+        </div> -->
+        <div class="container1">
+
+            
+        <div class="navbar">
+           <!-- <button id="bar" type="click"><i class="fa-solid fa-bars"> </i></button>  -->
+           <div class="navbar-brand"> <img src="\css\new-rental-hub-logo.png"> </div>
+           <!-- <button id="rightsign-in"><i class="fa-regular fa-user"></i> Log in</button> -->
+        </div>
+       
+
+
+        <div class="sidebar">
+            <ul class="slide-items">
+                <li class="slide-options"><a href="/login"><i class="fa-regular fa-user"></i> Log in</a> </li>
+                <li class="slide-options"><a href="/listings/Audi"><i class="fa-solid fa-film"></i> Auditorium</a></li>
+                <li class="slide-options"><a href="/listings/Meet"><i class="fa-regular fa-handshake"></i> Meeting Blocks</a></li>
+                <li class="slide-options"><a href="/listings/Resorts"><i class="fa-solid fa-umbrella-beach"></i>Resorts</a></li>
+                <li class="slide-options"><a href="/help"><i class="fa-solid fa-circle-info"></i> Help</a></li>
+                <li class="slide-options"><a href="/logout"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
+
+            </ul>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-youtube"></i>
+            </div>
+                
+        </div>
+        
+        <div class="details">
+            <!-- <h1><img id="wellcome" src="https://cdn2.vectorstock.com/i/1000x1000/64/26/neon-sign-welcome-on-on-brick-wall-background-vector-24516426.jpg" alt="welocome!"></h1> -->
+            <h1 style="color: aquamarine;">Welcome</h1>
+           
+            <div class="info">
+
+                <div class="location">
+                    <label for="city"></label>
+                    <span class="input" data-cy="hotelCityLabel">
+                        City Location
+                    </span>
+                    <br>
+                    <input id="city" class="city" data-cy="city" type="text" value="GOA" placeholder="Enter Location">
+                    <!-- <p class="country">India</p> -->
+                    
+                </div>
+                
+                <div class="categories" id="categories">
+                    <label for="categories"> Categories</label>
+                    <br>
+                    
+                    <select name="categories">
+                        <option value="audi">Auditorium</option>
+                        <option value="mb">Meeting Block</option>
+                        <!-- <option value="pg">Playground</option> -->
+                        <option value="mg">Marriage Gardens</option>
+                    </select>
+                </div>
+                
+                <div class="checkin">
+                    <form action="">
+                        <label for="checkin">  Check in</label>
+                        <br>
+                        <input type="date" id="checkin" name="checkin" placeholder="dd-mm-yy">
+                        
+                    </form>
+                </div>
+                
+                
+                <div class="checkout">
+                    <form action="">
+                        <label for="checkout">  Check out</label>
+                        <br>
+                        <input type="date" id="checkout" name="checkout" placeholder="dd-mm-yy">
+                        
+                    </form>
+                </div>
+                
+                <div class="search-icon">
+                    <button type="submit" name="submit">Submit
+                        <i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                    </div>
+
+                </div>
+                        
+        </div>
+
+
+        <!--categories  -->
+
+        <div class="show-category">
+
+          <div class="box">
+            <!-- <div class="box-content">Auditorium</div> -->
+                 <a href="https://www.google.com" class="box-content">
+                    <div class="imgcategory"> 
+                         <img src="https://images.unsplash.com/photo-1596522354195-e84ae3c98731?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXVkaXRvcml1bXxlbnwwfHwwfHx8MA%3D%3D" alt="audi img">
+                      </div>
+                    <div class="audi-body">
+                        <h5 class="card-title">Auditorium</h5>
+                        <p class="card-text">get the best for your needs</p>
+                        <a href="#" class="btn-primary">Book now</a>
+                     </div>
+        
+                 </a>
+           </div>
+
+           <div class="box">
+            <!-- <div class="box-content">Auditorium</div> -->
+                 <a href="#"class="box-content">
+                    <div class="imgcategory"> 
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D" alt="meeting img" >
+                      </div>
+                    <div class="audi-body">
+                        <h5 class="card-title">Meeting Blocks</h5>
+                        <p class="card-text">get the best for your needs</p>
+                        <a href="#" class="btn-primary">Book now</a>
+                     </div>
+        
+                 </a>
+           </div>
+
+           <!-- <div class="box"> -->
+            <!-- <div class="box-content">Auditorium</div> -->
+                 <!-- <a href="#"class="box-content">
+                    <div class="imgcategory"> 
+                        <img src="https://images.unsplash.com/photo-1596997000103-e597b3ca50df?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGxheWdyb3VuZHxlbnwwfHwwfHx8MA%3D%3D" alt="pg img">
+                    </div>
+                    <div class="audi-body">
+                        <h5 class="card-title">Playground</h5>
+                        <p class="card-text">get the best for your needs</p>
+                        <a href="#" class="btn-primary">Book now</a>
+                     </div>
+        
+                 </a>
+           </div> -->
+
+           <div class="box">
+            <!-- <div class="box-content">Auditorium</div> -->
+                 <a href="#"class="box-content">
+                    <div class="imgcategory"> 
+                         <img src="https://vistapointe.net/images/the-taj-mahal-palace-hotel-4.jpg">
+                      </div>
+                    <div class="audi-body">
+                        <h5 class="card-title">Resorts</h5>
+                        <p class="card-text">get the best for your needs</p>
+                        <a href="#" class="btn-primary">Book now</a>
+                     </div>
+                 </a>
+           </div>
+
+
+
+          
+        </div>
+
+
+        <!-- cities -->
+        <div class="cities">
+
+            <div class="city-line">
+
+
+            <div class="city-data">
+                <a href="#"><img class="Goa" src="https://media.istockphoto.com/id/535168027/photo/india-goa-palolem-beach.webp?b=1&s=170667a&w=0&k=20&c=Ma8WYe9NqMN9UiCYTAUby4lsZoaPjV5IqFWz0ZB7Lrs=" alt="Goa the beachs city!">
+                    <div class="city-body">
+                    
+                    <p id="city-name">Goa</p>
+                    <p class="title-0">Auditoriums,Meeting blocks,Playgrounds,Marriage Gardens</p>
+                </div>
+                </a>
+            </div>
+
+            <div class="city-data">
+                <a href="#"><img class="Goa" src="https://media.istockphoto.com/id/1473643398/photo/i-love-ooty-sign.webp?b=1&s=170667a&w=0&k=20&c=IhF4MPlsIluQxRYqP_QNBWZ1ls3yvvZjp9z_eVFQZbM=" alt="Goa the beachs city!">
+                    <div class="city-body">
+                    
+                    <p id="city-name">Ooty</p>
+                    
+                    <p class="title-0">Auditoriums,Meeting blocks,Playgrounds,Marriage Gardens</p>
+                </div>
+                </a>
+            </div>
+
+            <div class="city-data">
+                <a href="#"><img class="Goa" src="https://media.istockphoto.com/id/482766957/photo/eve-expensive.webp?b=1&s=170667a&w=0&k=20&c=dswkgxRW_bsHN1QHHIeMESqZ7JR3-FtfZ5lEyEOhYQo=" alt="Goa the beachs city!">
+                    <div class="city-body">
+                   
+                    <p id="city-name">Jaipur</p>
+                    <p class="title-0">Auditoriums,Meeting blocks,Playgrounds,Marriage Gardens</p>
+                </div>
+                </a>
+            </div>
+
+
+        </div>
+
+        <div class="city-line">
+
+            <div class="city-data">
+                <a href="#"><img class="Goa" src="https://images.unsplash.com/photo-1533118949949-4a48c7784872?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2luZ2FwdXJlfGVufDB8fDB8fHww" alt="Goa the beachs city!">
+                    <div class="city-body">
+                
+                    <p id="city-name">singapore</p>
+                    <p class="title-0">Auditoriums,Meeting blocks,Playgrounds,Marriage Gardens</p>
+                </div>
+                </a>
+            </div>
+
+            <div class="city-data">
+                <a href="#"><img class="Goa" src="https://media.istockphoto.com/id/898467608/photo/the-india-gate-in-delhi.webp?b=1&s=170667a&w=0&k=20&c=WltioK-eXIqNSPvHlBQ9xF3HdXOHGeNlNBdVUBT-hcc=" alt="Goa the beachs city!">
+                    <div class="city-body"> 
+                    <p id="city-name">Delhi</p>
+                    <p class="title-0">Auditoriums,Meeting blocks,Playgrounds,Marriage Gardens</p>
+                </div>
+                </a>
+            </div>
+
+
+            <div class="city-data">
+                <a href="#"><img class="Goa" src="https://media.istockphoto.com/id/1027005714/photo/marine-drive-mumbai.webp?b=1&s=170667a&w=0&k=20&c=4b8h3bHASC1vFlKhIwTt66sHJ0b-oP3JMo1ZShXVJik=" alt="Goa the beachs city!">
+                    <div class="city-body">
+                    <p id="city-name">Mumbai</p>
+                    <p class="title-0">Auditoriums,Meeting blocks,Playgrounds,Marriage Gardens</p>
+                </div> 
+            </a>
+            </div>
+
+        </div>
+
+        <div class="city-line">
+
+            <div class="city-data">
+                <a href="#"><img class="Goa" src="https://media.istockphoto.com/id/934701672/photo/paragliding-over-himalayan-mountains.jpg?s=612x612&w=is&k=20&c=rw6sSstRTTpJUFN3aL7ViQ5A5U5qXnJMsySOivlZcas=" alt="Goa the beachs city!">
+                    <div class="city-body">
+                    <p id="city-name">Manali</p>
+                    <p class="title-0">Auditoriums,Meeting blocks,Playgrounds,Marriage Gardens</p>
+                </div>
+                </a>
+            </div>
+
+            <div class="city-data">
+                <a href="#"><img class="Goa" src="https://media.istockphoto.com/id/901318200/photo/bangkok-wat-bopitpimuk-worawihan-thailand.webp?b=1&s=170667a&w=0&k=20&c=DoklLAK_YCdtWL6mKrlWLoWU4062RVfs4n7h7ecx-jA=" alt="Goa the beachs city!">
+                    <div class="city-body">
+                    <p id="city-name">Bankok</p>
+                    <p class="title-0">Auditoriums,Meeting blocks,Playgrounds,Marriage Gardens</p>
+                </div>
+                </a>
+            </div>
+
+            <div class="city-data">
+                <a href="#"><img class="Goa" src="https://media.istockphoto.com/id/1355009611/photo/kelingking-beach-in-nusa-penida.webp?b=1&s=170667a&w=0&k=20&c=PO5pgEXWu7d8GXhswTJgOHax16j2Eq-O7ST2_KIoZbE=" alt="Goa the beachs city!">
+                    <div class="city-body">
+                    <p id="city-name">Bali</p>
+                    <p class="title-0">Auditoriums,Meeting blocks,Playgrounds,Marriage Gardens</p>
+                </div>
+                </a>
+            </div>
+
+
+        </div>
+
+        <div class="city-line">
+            <div class="city-data">
+                <a href="#"><img class="Goa" src="https://media.istockphoto.com/id/166468333/photo/historic-architecture-of-vidhana-soudha-in-bangalore.jpg?s=612x612&w=is&k=20&c=JpjjZjbWyNCbXvPFULOGbG8wvK-f9byTUuVFWhpbJrU=" alt="Goa the beachs city!">
+                    <div class="city-body">
+                    <p id="city-name">Banglore</p>
+                    <p class="title-0">Auditoriums,Meeting blocks,Playgrounds,Marriage Gardens</p>
+                </div>
+                </a>
+            </div>
+
+            <div class="city-data">
+                <a href="#"><img class="Goa" src="https://media.istockphoto.com/id/1468125168/photo/rajwada-palace.jpg?s=612x612&w=is&k=20&c=8mVGqOM3D6w8bhAsF2L-0zgCDwnyWJzfNtqO4QUHeVI=" alt="Goa the beachs city!">
+                    <div class="city-body"> 
+                    <p id="city-name">Indore</p>
+                    <p class="title-0">Auditoriums,Meeting blocks,Playgrounds,Marriage Gardens</p>
+                </div>
+                </a>
+            </div>
+
+            <div class="city-data">
+                <a href="#"><img class="Goa" src="https://plus.unsplash.com/premium_photo-1697730430283-7e4456c78375?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bHVja25vdyUyMGNpdHl8ZW58MHx8MHx8fDA%3D" alt="Goa the beachs city!">
+                    <div class="city-body">
+                    <p id="city-name">Lucknow</p>
+                    <p class="title-0">Auditoriums,Meeting blocks,Playgrounds,Marriage Gardens</p>
+                </div>
+                </a>
+            </div>
+
+        </div>
+            
+        <div class="city-line">
+            <div class="city-data">
+                <a href="#"><img class="Goa" src="https://images.unsplash.com/photo-1665813814388-f2097e3b1297?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8UHVuZSUyMGJlYWNofGVufDB8fDB8fHww" alt="Goa the beachs city!">
+                    <div class="city-body">   
+                    <p  id="city-name">Pune</p>
+                    <p class="title-0">Auditoriums,Meeting blocks,Playgrounds,Marriage Gardens</p>
+                </div>
+                </a>
+            </div>
+
+            <div class="city-data">
+                <a href="#"><img class="Goa" src="https://media.istockphoto.com/id/1181630906/photo/the-bibi-ka-maqbara-aurangabad-maharashtra-india-the-bibi-ka-maqbara-is-a-beautiful-mausoleum.jpg?s=612x612&w=is&k=20&c=ctS_IDVWXfUL8mB6kUHV8MvCpn3zEqGCRb8XUtu0Nps=" alt="Goa the beachs city!">
+                    <div class="city-body">    
+                    <p id="city-name">Aurangabad</p>
+                    <p class="title-0">Auditoriums,Meeting blocks,Playgrounds,Marriage Gardens</p>
+                </div>
+                </a>
+
+            </div>
+
+            <div class="city-data">
+                <a href="#"><img class="Goa" src="https://media.istockphoto.com/id/1286981255/photo/ahmedabad-in-night-curfew.jpg?s=612x612&w=is&k=20&c=PoRomvaCUi5f7GcffjldVNtylRquIDdPImdye5jwWKY=" alt="Goa the beachs city!">
+                    <div class="city-body">    
+                    <p id="city-name">Ahamdabad</p>
+                    <p class="title-0">Auditoriums,Meeting blocks,Playgrounds,Marriage Gardens</p>
+                </div>
+                </a>
+        </div>
+
+        </div>
+
+            
+        </div>
+
+
+       
+    </div>
+
+</header>
+
+
+    <footer>
+        <div class="footer-panel1">
+            Back to top
+        </div>
+        <div class="footer-panel2">
+            <ul>
+                <p>BOOK NOW</p>
+                <a href="/audi">Auditoriums</a>
+                <a href="/meetingblocks">Meeting Bloks</a>
+                <a href="/playgrounds">Playgrounds</a>
+                <a href="/marriagegardens">Marriage gardens</a>
+                <a href="/">Rental Hub</a>
+                <a href="#">Party Booms!</a>
+            </ul>
+            <ul>
+                <p> Company</p>
+                <!-- <a href="/carriers">Careers</a> -->
+                <a href="/blogs">Blogs</a>
+                <a href="/about">About Rental Hub</a>
+                <a href="privacy">privacy policy</a>
+                <a href="/help">Help center</a>
+                <a href="t&c">Terms and conditions</a>
+            </ul>
+            <ul>
+                <p> Contact Us </p>
+                <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i>Twitter</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                <!-- <a href="#"><i class="fa-brands fa-whatsapp"></i>Whatsaap</a> -->
+                <a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+                <!-- <a href="#"><i class="fa-brands fa-github"></i>github</a> -->
+            </ul>
+        
+        </div>
+        <div class="footer-panel3">
+            <div class="logo-footer"></div>
+            <div class="lang-footer border">
+                <i class="fa-solid fa-globe"></i>
+                <p>English <i class="fa-solid fa-up-down"></i></p>
+            </div>
+            <div class="lang-footer border">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <p>USD - U.S.Dollar</p>
+            </div>
+        </div>
+        <div class="foot-panel4">
+            <div class="pages">
+            <a href="#">Conditions of Use</a>
+            <a href="#">Privacy Notie</a>
+            <a href="#">Your Ads Privacy Choices </a>
+            </div>
+        <div class="copyright">
+            © 1996-2023, RentalHub.com, Inc. or its affiliates
+        </div>
+    </div>
+    </footer>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>

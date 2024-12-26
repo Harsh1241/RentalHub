@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin-top: 10px !important;
+
+}
+
+.signup-container {
+    height: 35rem;
+    width: 15rem;
+    margin-top: 3rem;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
+.signup-container h2 {
+    margin-bottom: 20px;
+}
+
+.signup_input {
+    margin-bottom: 15px;
+}
+
+.signup_input label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.signup_input input {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.signup_btn {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup_btn:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 15px;
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.Google {
+    border: 2px solid rgb(40, 39, 39);
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.Facebook {
+    border: 2px solid rgb(40, 39, 39);
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.social-login {
+    text-align: center;
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderlust</title>
+</head>
+
+<body>
+    <% layout("/layouts/boilerplate") %>
+        <div class="row mt-3">
+            <div class="col-8 offset-2">
+                <h2>Create a New Listing</h2>
+                <form method="POST" action="/listings/Audi">
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title</label>
+                        <input name="listing[title]" placeholder="Add a catchy title" type="text" class="form-control"required>
+                        <div class="valid-fedback">Title looks good</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea name="listing[description]" class="form-control" class="form-control" required></textarea>
+                        <div class="invalid-feedback">Please enter a short Description</div>
+                    
+                    </div>
+
+                    <select name="categories">
+                        <option value="audi">Auditorium</option>
+                        <option value="meeting">Meeting Block</option>
+                        <option value="resorts">Resorts</option>
+                    </select>
+
+                    <div class="mb-3">
+                        <label for="image" class="form-label">Image</label>
+                        <input name="listing[image]" placeholder="enter image URL/Link" type="text"
+                            class="form-control"required>
+                        <div class="invalid-feedback">Please Enter a valid image link</div>
+
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-md-4">
+                            <label for="price" class="form-label">Price</label>
+                            <input name="listing[price]" placeholder="enter price" type="number" class="form-control">
+                            <div class="invalid-feedback">Enter a valid Price</div>
+                       
+                        </div>
+                        <div class="mb-3 col-md-8">
+                            <label for="country" class="form-label">Country</label>
+                            <input name="listing[country]" placeholder="enter country" type="text" class="form-control"required>
+                            <div class="invalid-feedback">Invalid country</div>
+                       
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="location" class="form-label">Location</label>
+                        <input name="listing[location]" placeholder="enter location" type="text" class="form-control"required>
+                        <div class="invalid-feedback">Invalid Location</div>
+                    
+                    </div>
+                    <button class="btn btn-dark add-btn mt-3">Add</button>
+                    <br> <br>
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>
